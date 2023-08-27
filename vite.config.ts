@@ -5,6 +5,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   server: {
-    port: 7001
+    port: 7001,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    }
   }
 })

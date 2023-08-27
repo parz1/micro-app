@@ -11,9 +11,10 @@ export default {
       window.qiankunStarted = true
       registerApps()
       start({
-        sandbox: {
-          experimentalStyleIsolation: true // 样式隔离
-        }
+        sandbox: false,
+        // sandbox: {
+        //   experimentalStyleIsolation: true // 样式隔离
+        // }
       })
     }
   }
